@@ -1,0 +1,129 @@
+body{
+    margin:0;
+    background-color: rgb(75, 84, 94);
+    background-image: linear-gradient(rgb(255, 255, 255, 0),rgb(14, 14, 14));
+}
+
+.bg-image{
+    width:100%;
+    height:400px;
+    opacity:.5;
+    position:relative;
+    top:0px;
+}
+
+#header{
+    text-align: center;
+    position: relative;
+    top: -230px;
+    font-size: 60px;
+    color:rgb(255, 31, 31);
+    text-shadow: 3px 3px black;
+}
+
+.wrapper{
+    max-width: 1200px;
+    min-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color:rgb(255, 116, 52);
+    font-size: 30px;
+    text-shadow: 1px 1px black;
+    position:relative;
+    top:-150px;
+}
+
+.main{
+    float: left;
+    width:65%;
+    padding: 10px;
+    text-align: justify;
+
+}
+#side1{
+    float:left;
+    width:15%;
+    padding: 10px;
+}
+#side2{
+    float:right;
+    width:15%;
+    padding: 10px;
+}
+
+@keyframes wobble{
+    0%{
+        transform: none
+    }
+    8%{
+        transform: rotate(2deg) scale(1.02);
+    }
+    16%{
+        transform: rotate(4deg) ;
+    }
+    25%{
+        transform: rotate(6deg) scale(0.98);
+    }
+    33%{
+        transform: rotate(4deg) ;
+    }
+    41%{
+        transform: rotate(2deg) scale(1.02);
+    }
+    50%{
+        transform: none;
+    }
+    58%{
+        transform: rotate(-2deg) scale(0.98);
+    }
+    66%{
+        transform: rotate(-4deg) ;
+    }
+    75%{
+        transform: rotate(-6deg) scale(1.02);
+    }
+    83%{
+        transform: rotate(-4deg) ;
+    }
+    91%{
+        transform: rotate(-2deg) scale(0.98);
+    }
+    100%{
+        transform: none;
+    }
+
+}
+
+
+
+.icon{
+    max-width: 100%;
+    margin-bottom: 100px;
+}
+
+.icon:hover{
+    transform: none;
+    animation: 1.3s wobble ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#donate{
+    width: 100%;
+}
+
+.bg{
+    width: 1920px;
+    height: 1080px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    overflow: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+#dollar{
+    margin-right: 20px;
+}
